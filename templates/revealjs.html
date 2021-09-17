@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+        <title>Informatik - $title$</title>
+
+        <!-- reveal.js -->
+        <link rel="stylesheet" href="/assets/reveal.js/reset.css">
+        <link rel="stylesheet" href="/assets/reveal.js/reveal.css">
+        <link rel="stylesheet" href="/assets/reveal.js/theme/beige.css">
+        <style>
+            .reveal h1 { 
+                text-align: center;
+                font-size: 2em;
+                font-weight: normal;
+                text-shadow: none;
+            }
+        </style>
+        
+        <!-- highlight.js -->
+        <link rel="stylesheet" href="/assets/hightlight.js/default.min.css">
+        <script src="/assets/hightlight.js/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+
+        <!-- font awesome -->
+        <script defer src="/assets/fontawesome/js/all.js"></script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+              $body$
+            </div>
+        </div>
+
+        <script src="/assets/reveal.js/reveal.js"></script>
+
+        <!-- plugins -->
+        <script src="/assets/reveal.js/plugin/markdown/markdown.js"></script>
+        <script src="/assets/reveal.js/plugin/notes/notes.js"></script>
+        <script src="/assets/reveal.js/plugin/math/math.js"></script>
+        <script src="/assets/reveal.js/plugin/menu/menu.js"></script>
+
+        <script>
+          Reveal.initialize({
+            hash: false,
+            // plugins
+            plugins: [ RevealMarkdown, RevealNotes, RevealMath, RevealMenu ]
+          });
+        </script>
+    </body>
+</html>

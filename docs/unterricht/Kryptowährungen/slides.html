@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <title>Informatik - Demo Slide</title>
+
+        <!-- reveal.js -->
+        <link rel="stylesheet" href="../../assets/reveal.js/reset.css">
+        <link rel="stylesheet" href="../../assets/reveal.js/reveal.css">
+        <link rel="stylesheet" href="../../assets/reveal.js/theme/beige.css">
+        <style>
+            .reveal h1 { 
+                text-align: center;
+                font-size: 2em;
+                font-weight: normal;
+                text-shadow: none;
+            }
+        </style>
+        
+        <!-- highlight.js -->
+        <link rel="stylesheet" href="../../assets/hightlight.js/default.min.css">
+        <script src="../../assets/hightlight.js/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+
+        <!-- font awesome -->
+        <script defer src="../../assets/fontawesome/js/all.js"></script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+              <section id="font-awesome" class="slide level1">
+<h1>Font Awesome</h1>
+<p><i class="fas fa-user"></i></p>
+</section>
+<section id="quote" class="slide level1">
+<h1>Quote</h1>
+<blockquote>
+<p>Blockquotes are very handy in email to emulate reply text. This line is part of the same quote. <a href="https://www.google.com">I’m an inline-style link</a></p>
+</blockquote>
+</section>
+<section id="in-the-morning" class="slide level1" data-background-color="rgb(70, 70, 255)">
+<h1 data-background-color="rgb(70, 70, 255)">In the morning</h1>
+<ul>
+<li class="fragment">Turn off alarm</li>
+<li class="fragment">Get out of bed</li>
+</ul>
+</section>
+<section id="breakfast" class="slide level1" data-background-image="images/test.jpg">
+<h1 data-background-image="images/test.jpg">Breakfast</h1>
+<p>content before the pause</p>
+<div class="fragment">
+<p>content after the pause</p>
+</div>
+</section>
+<section id="in-the-evening" class="slide level1">
+<h1>In the evening</h1>
+<p><img data-src="images/test.jpg" style="width:100.0%" /></p>
+</section>
+<section id="code" class="slide level1">
+<h1>Code</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># part to end.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> splitArr(arr, n, k): </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, k): </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> arr[<span class="dv">0</span>]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, n<span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            arr[j] <span class="op">=</span> arr[j <span class="op">+</span> <span class="dv">1</span>]</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>          </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        arr[n<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> x</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># main</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> [<span class="dv">12</span>, <span class="dv">10</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">52</span>, <span class="dv">36</span>]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">len</span>(arr)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>position <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>splitArr(arr, n, position)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, n): </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(arr[i], end <span class="op">=</span> <span class="st">' '</span>)</span></code></pre></div>
+</section>
+<section id="math" class="slide level1">
+<h1>Math</h1>
+<p><span class="math display"><em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup></span></p>
+<p><span class="math display"><em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup></span></p>
+<p><span class="math display"><em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup></span></p>
+<p><span class="math display"><em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup></span></p>
+<p><span class="math display"><em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup></span></p>
+<p><span class="math display"><em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup></span></p>
+<p><span class="math display"><em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup></span></p>
+<p><span class="math display"><em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup></span></p>
+</section>
+<section id="columns" class="slide level1">
+<h1>Columns</h1>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>This is a Test</p>
+</div><div class="column" style="width:60%;">
+<p>This is another Test</p>
+</div>
+</div>
+</section>
+<section id="tables" class="slide level1">
+<h1>Tables</h1>
+<table>
+<thead>
+<tr class="header">
+<th>Tables</th>
+<th style="text-align: center;">Are</th>
+<th style="text-align: right;">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>col 3 is</td>
+<td style="text-align: center;">right-aligned</td>
+<td style="text-align: right;">$1600</td>
+</tr>
+<tr class="even">
+<td>col 2 is</td>
+<td style="text-align: center;">centered</td>
+<td style="text-align: right;">$12</td>
+</tr>
+<tr class="odd">
+<td>zebra stripes</td>
+<td style="text-align: center;">are neat</td>
+<td style="text-align: right;">$1</td>
+</tr>
+</tbody>
+</table>
+</section>
+            </div>
+        </div>
+
+        <script src="../../assets/reveal.js/reveal.js"></script>
+
+        <!-- plugins -->
+        <script src="../../assets/reveal.js/plugin/markdown/markdown.js"></script>
+        <script src="../../assets/reveal.js/plugin/notes/notes.js"></script>
+        <script src="../../assets/reveal.js/plugin/math/math.js"></script>
+        <script src="../../assets/reveal.js/plugin/menu/menu.js"></script>
+
+        <script>
+          Reveal.initialize({
+            hash: false,
+            // plugins
+            plugins: [ RevealMarkdown, RevealNotes, RevealMath, RevealMenu ]
+          });
+        </script>
+    </body>
+</html>
